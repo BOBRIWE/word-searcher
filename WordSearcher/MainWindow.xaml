@@ -1,0 +1,21 @@
+﻿<Window x:Class="WordSearcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WordSearcher"
+        mc:Ignorable="d"
+        Title="Dictionary" Height="430" Width="320" ResizeMode="NoResize">
+    <Grid Background="#FF6C757D">
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="Load dictionary..." Click="MenuItem_Click"/>
+            </MenuItem>
+
+        </Menu>
+        <TextBox x:Name="txtBox" HorizontalAlignment="Left" Height="22" Margin="10,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
+        <Button Content="Search" HorizontalAlignment="Left" Height="22" Margin="232,45,0,0" VerticalAlignment="Top" Width="62" Click="Button_Click"/>
+        <ListBox x:Name="lstBox" HorizontalAlignment="Left" Height="306" Margin="10,72,0,0" VerticalAlignment="Top" Width="284"/>
+
+    </Grid>
+</Window>
